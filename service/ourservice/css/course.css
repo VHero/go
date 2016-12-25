@@ -1,0 +1,47 @@
+/*课程辅导*/
+/*为什么选择上课帮*/
+.jum{
+    width: 80%;
+    height: 1350px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    background: white;
+}
+h1{
+    border-bottom: 1px solid lightgray;
+}
+.jumbotron p{
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.reason1{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 198, 74, 0.44);
+    border-bottom: 2px solid rgba(211, 106, 210, 0.74);
+}
+.reason1 h3{
+    padding: 10px;
+}
+.reason2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.reason3 ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*价格与最新优惠*/
+.price p{
+    margin-top: 10px;
+}
+.price p a{
+    font-size: 17px;
+}
+
+
+/*常见问题*/
+.question{
+    margin-top: 10px;
+}

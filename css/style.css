@@ -1,0 +1,298 @@
+body{
+    font-family: "华文细黑", STHeiti Light, STXihei, "华文细黑", SimHei, "黑体" !important;
+}
+header{
+    padding-bottom: 50px;
+}
+.service,.teamTeacher,.home-comment,.case{
+    padding: 50px 0;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+.navbar-default{
+    background-color:#9c1e2e ;
+    border-color: #9c1e2e;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+    /*text-decoration: underline;*/
+    color: #fff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+.banner{
+    position: relative;
+    top: 50px;
+}
+.background-gray{
+    background-color: #f5f7fa;
+}
+/*国家*/
+.country{
+    padding: 40px 0 10px 0;
+}
+.country-item{
+    position: relative;
+    display: inline-block;
+}
+.country-item img{
+    width: 100%;
+}
+.country-item .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.country-item .text{
+
+    line-height: 105px;
+    position: absolute;
+    top:0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.country-item .mask:hover{
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+/*服务*/
+.service{
+    /*background-color: #f5f7fa;*/
+}
+.service h2{
+    margin-top: 40px;
+}
+.service h2>p{
+    font-size: 16px;
+    color: #777;
+}
+.service .thumbnail{
+    padding: 0;
+}
+.service .thumbnail img{
+    width:100%;
+}
+
+/*客户评价*/
+
+.comment{
+    background: url("../image/collage.jpg") center center ;
+    padding: 80px 0;
+    background-size: cover;
+}
+.comment h2{
+    color: #fff;
+}
+.user-comment{
+    color: #ccc;
+    font-size: 16px;
+    padding-top: 20px;
+}
+/*教师*/
+.team-description{
+    line-height: 28px;
+    margin: 0;
+}
+.team{
+    margin-top: 20px;
+}
+.team-btn{
+    width: 300px;
+
+    font-size: 22px;
+    display: block;
+    margin: 0 auto;
+}
+.teacher-picture{
+    width: 100px;
+    margin: 10px 0;
+}
+/*用户评价*/
+.comment-wrap{
+    margin-top: 20px;
+}
+.home-comment-item{
+    border:1px #e4e4e4 solid;
+    padding: 25px 20px 10px;
+    margin-bottom: 20px;
+}
+.customer-picture{
+    width: 50px;
+}
+.comment-info{
+    text-align: right;
+}
+.comment-info .line{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+/*案例*/
+.case-list{
+    margin-top: 40px;
+}
+/*底部*/
+footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0;
+    color: #c8c8c8;
+    border-top: 2px solid #009635;
+    background: #272b35
+}
+footer .qq{
+    width: 20px;
+}
+.foot-logo{
+    margin-top: 0;
+    font-size: 30px;
+}
+.footer-item li{
+    font-size: 16px;
+    color: #c8c8c8;
+    margin-bottom: 10px;
+}
+.footer-item li a{
+    color: #c8c8c8;
+}
+.footer-item li a:hover{
+    color:#fff;
+}
+.footer-item .title{
+    margin-bottom: 20px;
+}
+.title a{
+    font-size: 20px;
+}
+.title a:hover{
+    color: #fff;
+}
+.attention .title{
+    font-size: 20px;
+    color: #c8c8c8;
+}
+.attention li{
+    font-size: 16px;
+}
+.attention li a{
+    color:#00c3b6 ;
+}
+.attention li a:hover{
+    color: #f7f7f7;
+    transition: all 0.6s ease;
+}
+.attention li{
+    margin-bottom: 10px;
+}
+.attention .title{
+    margin-bottom: 20px;
+}
+.footer-icon{
+    font-size: 24px;
+}
+.copy-right{
+    font-family: Helvetica, "Helvetica Neue", "\5FAE\8F6F\96C5\9ED1", Tahoma, Arial, sans-serif;
+}
+/*案例页面*/
+.case-page-bg{
+    height: 300px;
+    padding-top: 60px;
+    background: url(../image/case-top-bg.jpg) no-repeat;
+}
+.case-description{
+    color: #fff;
+    text-align: center;
+}
+.case-description h3{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.case-description p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.success-case{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.task-screen{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.case-page-item .thumbnail{
+    border: 1px #e4e4e4 solid;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+.case-page-item .thumbnail:hover{
+    text-decoration: none;
+    color: #428bca;
+}
+.case-page-comment{
+    margin-top: 10px;
+}
+.modal-case-picture img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.case-page-info{
+    display: inline-block;
+    text-align: right;
+    width:100%;
+}
+.case-page-info img{
+    width: 30px;
+}
+.case-page-more {
+    margin-bottom: 40px;
+}
+
+/*团队*/
+.teacher{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.teacher-item{
+    border-radius: 15px;
+}
+.teacher-description h3{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.teacher-description p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.teacher-item-avartar{
+    width: 100px;
+}
+.teacher-page-bg{
+    height: 300px;
+    padding-top: 60px;
+    background: url(../image/case-top-bg.jpg) no-repeat;
+}
+.teacher-description{
+    color: #fff;
+    text-align: center;
+}
+.teacher-item-skill span{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.teacher-pagination{
+    text-align: center;
+}
