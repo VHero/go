@@ -1,8 +1,17 @@
 body{
-    font-family: "华文细黑", STHeiti Light, STXihei, "华文细黑", SimHei, "黑体" !important;
+    font-family: "微软雅黑","Microsoft YaHei";
 }
 header{
     padding-bottom: 50px;
+}
+@media (max-width: 767px)  {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: #fff;
+    }
+
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+    color: #fff;
 }
 .service,.teamTeacher,.home-comment,.case{
     padding: 50px 0;
@@ -10,9 +19,12 @@ header{
 .navbar-default .navbar-nav>li>a{
     color: #fff;
 }
+.navbar-toggle{
+    background-color: #ddd;
+}
 .navbar-default{
-    background-color:#9c1e2e ;
-    border-color: #9c1e2e;
+    background-color:#3498db ;
+    border-color: #3498db;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     /*text-decoration: underline;*/
@@ -43,6 +55,7 @@ header{
 .country-item img{
     width: 100%;
 }
+
 .country-item .mask{
     position: absolute;
     top: 0;
@@ -107,13 +120,21 @@ header{
 .team{
     margin-top: 20px;
 }
-.team-btn{
-    width: 300px;
-
-    font-size: 22px;
-    display: block;
-    margin: 0 auto;
+.team-item{
+    position: relative;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.team-item:hover{
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    top: -4px;
+    transform: scale(1.02);
+    -moz-transform:scale(1.02);
+    -webkit-transform:scale(1.02);
+    -o-transform:scale(1.02);
+    transition: all .5s ease;
+}
+
 .teacher-picture{
     width: 100px;
     margin: 10px 0;
@@ -126,6 +147,9 @@ header{
     border:1px #e4e4e4 solid;
     padding: 25px 20px 10px;
     margin-bottom: 20px;
+}
+.home-comment-item:hover{
+    border: 1px solid #3498db;
 }
 .customer-picture{
     width: 50px;
@@ -153,6 +177,10 @@ footer{
 }
 footer .qq{
     width: 20px;
+}
+.qq-btn{
+    display: block;
+    margin-bottom:10px
 }
 .foot-logo{
     margin-top: 0;
@@ -201,6 +229,9 @@ footer .qq{
 .footer-icon{
     font-size: 24px;
 }
+.go-logo:hover{
+
+}
 .copy-right{
     font-family: Helvetica, "Helvetica Neue", "\5FAE\8F6F\96C5\9ED1", Tahoma, Arial, sans-serif;
 }
@@ -236,6 +267,7 @@ footer .qq{
     margin-bottom: 0;
     margin-bottom: 30px;
     padding-bottom: 15px;
+    text-decoration: none;
 }
 .case-page-item .thumbnail:hover{
     text-decoration: none;
@@ -268,6 +300,7 @@ footer .qq{
 }
 .teacher-item{
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .teacher-description h3{
     font-size: 38px;
@@ -295,4 +328,49 @@ footer .qq{
 }
 .teacher-pagination{
     text-align: center;
+}
+.teacher-item-description .introduce{
+    display: block;
+}
+.school-list li span{
+    margin-right: 2px;
+    display: inline-block;
+}
+.teacher-item-score{
+
+}
+.teacher-item-score strong span{
+    color: #5bc0de;
+}
+.teacher-item-score strong .all-score{
+    color: #000;
+}
+/*隐私政策*/
+.privacy-page-bg{
+    height: 300px;
+    padding-top: 60px;
+    background: url(../image/privacy_bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.privacy-description{
+    color: #fff;
+    text-align: center;
+}
+.privacy-description h3{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.privacy-description p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.privacy-container{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.privacy-container h2{
+    margin-bottom: 30px;
+}
+.privacy-container p{
+    margin-bottom: 20px;
 }
