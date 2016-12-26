@@ -45,3 +45,18 @@ h1{
 .question{
     margin-top: 10px;
 }
+
+/*协议展示*/
+.gap{
+    margin-top: 15px;
+}
+
+.thumbnail img{
+     width: 200px;
+     height: 240px;
+ }
+
+.modal-body img{
+    width: 100%;
+}
+

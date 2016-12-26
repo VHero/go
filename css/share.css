@@ -1,0 +1,26 @@
+
+/*头部标题部分*/
+.headerImage{
+    padding-top: 62px;
+    padding-bottom: 62px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: url("../image/shareImage.jpg") no-repeat;
+    background-size: cover;
+}
+
+h1,h2{
+    color: white;
+}
+
+/*导航*/
+.contain{
+    position: absolute;
+    left: 50%;
+    margin-left: -146px;
+}
+
+.contain ul li a{
+    margin-left: 60px;
+}

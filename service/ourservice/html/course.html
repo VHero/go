@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <title>课程辅导</title>
     <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../css/stlye1.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/course.css">
     <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/course.js"></script>
 </head>
 <body>
+
+
+<!--头部导航条-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">上学</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">论文辅导</a></li>
+                        <li><a href="#">作业辅导</a></li>
+                        <li><a href="#">课程辅导</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">成功案例</a></li>
+                <li><a href="#">导师</a></li>
+                <li><a href="#">用户评价</a></li>
+                <li><a href="#">资源分享</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
     <div class="container">
         <div class="jumbotron jum">
             <div>
@@ -102,7 +141,6 @@
                                     <td>1100美元起</td>
                                     <td>900美元起</td>
                                 </tr>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -128,6 +166,50 @@
                             <p>A: 您如果寻求达到更好的成绩，您可以选择我们的A级辅导服务。</p>
                         </li>
                     </ul>
+
+                </div>
+
+                <!--协议展示-->
+                <div>
+
+                    <div class="reason1">
+                        <h3>辅导协议展示</h3>
+                    </div>
+
+                    <!--展示图-->
+                    <div id="modalImg" class="row gap">
+
+                        <div class="col-md-6">
+
+                            <div class="thumbnail" data-toggle="modal" data-target="#myModal" id="img0">
+                                <img src="../../../image/protocal1.jpg">
+                                <h2 class="text-center">点击放大</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="thumbnail" data-toggle="modal" data-target="#myModal" id="img1">
+                                <img src="../../../image/protocal2.jpg">
+                                <h2 class="text-center">点击放大</h2>
+                            </div>
+
+                        </div>
+                        <!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="line-height: 10px">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img alt="切换图" src="../../../image/protocal1.jpg" id="targetImg">
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                        </div>
+                    </div>
 
                 </div>
             </div>
