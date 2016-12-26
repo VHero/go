@@ -5,9 +5,9 @@
     padding-bottom: 62px;
     text-align: center;
     width: 100%;
-    /*height: 300px;*/
-    background: url("../image/shareImage.jpg") no-repeat;
-    background-size: cover;
+    height: 300px;
+    background: url("../image/case-top-bg.jpg") no-repeat;
+    background-size: auto;
 }
 
 h3,h4{
