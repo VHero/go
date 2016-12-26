@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>资源分享</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/screen.css">
     <link rel="stylesheet" href="../css/share.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <script src="share.js"></script>
 </head>
 <body>
@@ -34,13 +37,13 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">论文辅导</a></li>
                         <li><a href="#">作业辅导</a></li>
-                        <li><a href="#">课程辅导</a></li>
+                        <li><a href="../service/ourservice/html/course.html">课程辅导</a></li>
                     </ul>
                 </li>
-                <li><a href="#">成功案例</a></li>
-                <li><a href="#">导师</a></li>
-                <li><a href="#">用户评价</a></li>
-                <li><a href="#">资源分享</a></li>
+                <li><a href="../case/index.html">成功案例</a></li>
+                <li><a href="../teacher/index.html">导师</a></li>
+                <li><a href="../userComments/comments.html">用户评价</a></li>
+                <li><a href="../resourceShare/share.html">资源分享</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -52,25 +55,207 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1>资源有限，共享无限。</h1>
-                <h2>知识与幸福共存，分享与快乐同在。</h2>
+                <h3>资源有限，共享无限。</h3>
+                <h4>知识与幸福共存，分享与快乐同在。</h4>
             </div>
         </div>
     </div>
 </header>
 
 
-<!--导航-->
-<nav class="nav" role="navigation">
+
+<!--主题内容部分-->
+<section class="content-wrap">
     <div class="container">
-        <div class="contain">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">学习资料</a></li>
-                <li><a href="#">学习文档</a></li>
-            </ul>
+        <div class="row">
+
+            <main class="col-md-8 main-content">
+
+                <article id="70" class="post">
+
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="/post/laravel-5-3-is-now-released/">Laravel 5.3 正式发布</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="/author/wangsai/">王赛</a></span> •
+                            <time class="post-date" datetime="2016年8月24日星期三凌晨2点04分" title="2016年8月24日星期三凌晨2点04分">2016年8月24日</time>
+                        </div>
+                    </div>
+                    <div class="featured-media">
+                        <a href="/post/laravel-5-3-is-now-released/"><img src="http://image.golaravel.com/9/a9/c367f99a8366ca86f7b889da25022.png" alt="Laravel 5.3 正式发布"></a>
+                    </div>
+                    <div class="post-content">
+                        <p>Laravel 项目组自豪地宣布 Laravel 5.3 正式发布了 ！5.3 版本中的新增特性主要集中在提升开发速度，通过增强常见任务的开箱即用功能提升开发效率。 此版本是常规发布版本，提供六个月的 bug 修复补丁和一年的安全补丁。当前，Laravel 5.1 是最新的 LTS（长期支持） 版本，提供两年的 bug</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="/post/laravel-5-3-is-now-released/" class="btn btn-default">阅读全文</a>
+                    </div>
+
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+                <article id="69" class="post">
+
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="/post/laracon-laravel-5-3-recap/">Laracon 开发者大会快报：听 Taylor Otwell  讲解 Laravel 5.3 的新特性</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="/author/wangsai/">王赛</a></span> •
+                            <time class="post-date" datetime="2016年7月28日星期四晚上7点29分" title="2016年7月28日星期四晚上7点29分">2016年7月28日</time>
+                        </div>
+                    </div>
+                    <div class="featured-media">
+                        <a href="/post/laracon-laravel-5-3-recap/"><img src="http://image.golaravel.com/5/1a/d0b8c085dec30605e2c3e9e773d00.png" alt="Laracon 开发者大会快报：听 Taylor Otwell  讲解 Laravel 5.3 的新特性"></a>
+                    </div>
+                    <div class="post-content">
+                        <p>今天， Taylor Otwell 在&nbsp;Laracon US 开发者大会上就 Laravel 5.3 的新特性作了长时间的演讲，演讲内容主要概括为四个方面：Laravel Scout、Laravel Passport、Laravel Mailable  和 Laravel Notifications。 此次演讲预定是</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="/post/laracon-laravel-5-3-recap/" class="btn btn-default">阅读全文</a>
+                    </div>
+
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+                <article id="68" class="post">
+
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="/post/laravel-turns-five/">Laravel 五岁了</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="/author/wangsai/">王赛</a></span> •
+                            <time class="post-date" datetime="2016年6月12日星期日凌晨2点49分" title="2016年6月12日星期日凌晨2点49分">2016年6月12日</time>
+                        </div>
+                    </div>
+                    <div class="featured-media">
+                        <a href="/post/laravel-turns-five/"><img src="http://image.golaravel.com/e/09/f05fc8d95497bad948ac46eb68d9d.jpg" alt="Laravel 五岁了"></a>
+                    </div>
+                    <div class="post-content">
+                        <p>五年前（2011年6月11日）的今天，Taylor Otwell 将 Laravel 带到了这个世界！ 下面摘抄了部分原文：点这里看完整的原文   I've been working on this framework for about 7 months. I've worked really hard to mak</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="/post/laravel-turns-five/" class="btn btn-default">阅读全文</a>
+                    </div>
+
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+
+
+                <nav class="pagination" role="navigation">
+                    <span class="page-number">第 1 页 ⁄ 共 5 页</span>
+                    <a class="older-posts" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+                </nav>
+
+
+            </main>
+
+            <aside class="col-md-4 sidebar">
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">社区</h4>
+                    <div class="content community">
+                        <p>QQ群：111111111</p>
+                        <p><a href="http://wenda.golaravel.com/" title="Laravel中文网问答社区" target="_blank" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '问答社区'])"><i class="fa fa-comments"></i> 问答社区</a></p>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+
+                <!-- start widget -->
+
+                <!-- end widget -->
+
+
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">标签云</h4>
+                    <div class="content tag-cloud">
+                        <a href="/tag/laravel-5-2/">Laravel 5.2</a>
+                        <a href="/tag/spark/">Spark</a>
+                        <a href="/tag/jing-xiang/">镜像</a>
+                        <a href="/tag/xin-ban-ben-fa-bu/">新版本发布</a>
+
+
+                        <a href="/tag-cloud/">...</a>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->
+
+                <!-- start widget -->
+                <!-- end widget -->                </aside>
+
         </div>
     </div>
-</nav>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="col-md-10">
+            <div class="col-md-5 text-left">
+                <h3 class="foot-logo">上学Logo</h3>
+                <p>上课帮为您提供优质的论文辅导服务。上课帮会根据您的要求安排相关科目的辅导老师，在约定的截止时间内将任务完成。上课帮为您提供论文提供免费的修改服务，以确保最终作品符合您的预期。同时，上课帮免费赠送您Turnitin 检测，确保万无一失。</p>
+                <a href="" class="btn btn-primary col-md-8 col-xs-10  qq-btn"><img src="../image/qq.png" alt="" class="qq">在线客服</a>
+            </div>
+            <ul class="col-md-2 col-xs-4 service-items list-unstyled footer-item hidden-xs">
+                <li class="title">
+                    <a href="">我们的服务</a>
+                </li>
+                <li><a href="">作业辅导</a></li>
+                <li><a href="">论文指导</a></li>
+                <li><a href="">课程代修</a></li>
+            </ul>
+            <ul class="col-md-2 col-xs-4 privacy-items list-unstyled footer-item hidden-xs">
+                <li class="title">
+                    <a href="">隐私与声明</a>
+                </li>
+                <li>
+                    <a href="">隐私条款</a>
+                </li>
+            </ul>
+            <ul class="col-md-2 col-xs-4 aboutus-items list-unstyled footer-item hidden-xs">
+                <li class="title">
+                    <a href="">关于我们</a>
+                </li>
+                <li>
+                    <a href="">加入我们</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="col-md-2 col-xs-12 text-center">
+            <ul class="list-unstyled attention">
+                <li class="title">
+                    关注
+                </li>
+                <li><a href="">QQ:123456789</a></li>
+                <li><a href="">Email:12314@xrkj.com</a></li>
+
+            </ul>
+        </ul>
+        <div class="col-xs-12 col-md-12 text-center ui-intro">
+            <i class="go-logo glyphicon glyphicon-home footer-icon"></i>
+            <p class="copy-right">2011-2016 © CourseBang Inc. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
