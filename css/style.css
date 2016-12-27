@@ -162,6 +162,13 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     vertical-align: middle;
 
 }
+.comment-btn,.case-btn,.team-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    font-size: 22px;
+}
 /*案例*/
 .case-list{
     margin-top: 40px;
@@ -206,7 +213,7 @@ footer .qq{
 .title a:hover{
     color: #fff;
 }
-.attention .title{
+.attention .title,.aboutus-items .title,.privacy-items .title,.service-items .title{
     font-size: 20px;
     color: #c8c8c8;
 }
@@ -275,6 +282,7 @@ footer .qq{
 }
 .case-page-comment{
     margin-top: 10px;
+    color: #333;
 }
 .modal-case-picture img{
     display: block;
@@ -285,6 +293,7 @@ footer .qq{
     display: inline-block;
     text-align: right;
     width:100%;
+    color: #333;
 }
 .case-page-info img{
     width: 30px;
