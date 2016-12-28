@@ -383,3 +383,35 @@ footer .qq{
 .privacy-container p{
     margin-bottom: 20px;
 }
+/*左下角qq*/
+.qq-window{
+    position: fixed;
+    left: 10px;
+    bottom: 0px;
+    width: 200px;
+    height: 30px;
+    background: #464646;
+    padding: 5px 14px;
+    border-radius: 5px 5px 0 0;
+}
+
+.qq-window i{
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    background: url("../image.png") no-repeat center;
+    background-size: contain;
+}
+
+.qq-window span{
+    float: left;
+    color: white;
+    line-height: 20px;
+}
+
+.qq-window span b{
+    color: #D966C7;
+    margin-left: 0.4rem;
+}
