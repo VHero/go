@@ -383,7 +383,7 @@ footer .qq{
 .privacy-container p{
     margin-bottom: 20px;
 }
-/*左下角qq*/
+
 .qq-window{
     position: fixed;
     left: 10px;
@@ -401,7 +401,9 @@ footer .qq{
     width: 20px;
     height: 20px;
     margin-right: 1rem;
-    background: url("../image.png") no-repeat center;
+
+    background: url("../image/qq.png") no-repeat center;
+
     background-size: contain;
 }
 
@@ -414,4 +416,6 @@ footer .qq{
 .qq-window span b{
     color: #D966C7;
     margin-left: 0.4rem;
+
 }
+
