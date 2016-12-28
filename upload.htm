@@ -5,10 +5,20 @@
 	<title>Document</title>
 </head>
 <body>
-	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="doup.php">
+<h2>任务截屏</h2>
+	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="uploadAction.php">
   <label for="upfile">上传文件：</label>
+
   <input type="file" name="upfile" id="fileField" />
-  <input type="submit" name="submit" value="上传"/>
+  <input type="submit" name="submit" value="提交"/>
+</form>
+<h2>案例上传</h2>
+<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="caseAction.php">
+  <label for="upfile">上传文件：</label>
+
+  <input type="file" name="upfile" id="fileField" />
+    <p><input type="text" name="name"></p>
+  <input type="submit" name="submit" value="提交"/>
 </form>
 </body>
 </html>
