@@ -32,39 +32,30 @@
                     <h2 class="text-center">成功案例</h2>
                 </div>
                 <div class="row case-page-list" >
-                    <div class="col-md-4 col-xs-12 case-page-item">
-                        <a href="" class="thumbnail " data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-image.jpg" alt="" class="case-page-picture modal-case-picture">
-                            <p class="case-page-comment">我是上课帮的老客户了，之前一直在这家代写作业和paper。老师们都很专业，后期还可以帮我修改paper。</p>
-                            <div class="case-page-info">
-                                <span>————   萌萌的女汉子</span>
-                                <img src="../image/customer.png" alt="" class="img-circle">
+                    <?php
+                                    
+                $caseTableName = "case";
+                $caseArray = array("id" =>"", "imgsrc" =>"","article"=>"","name"=>"");
+                $caseCurrentPage = 1; //1页
+                $casePageSize = 20; //10个
+                $caseOrder = "id"; //按照id排序
+                $caseSort = "asc";//desc逆序
+                $caseParamSql = null;
+                $caseList = search($caseTableName, $caseCurrentPage, $casePageSize, $caseOrder, $caseSort, $caseArray, $caseParamSql);
+                // echo $caseList;
+                foreach($caseList as $obj) {
+                echo "<div class='col-md-4 col-xs-12 case-page-item'>
+                        <a href='' class='thumbnail' data-toggle='modal' data-target='.bs-modal1'>
+                            <img src=../".$obj['imgsrc']." alt='' class='case-page-picture modal-case-picture'>
+                            <p class='case-page-comment'>".$obj['article']."</p>
+                            <div class='case-page-info'>
+                                <span>————   ".$obj['name']."</span>
                             </div>
                         </a>
-
-                    </div>
-                    <div class="col-md-4 col-xs-12 case-page-item">
-                        <a href="" class="thumbnail " data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-image.jpg" alt="" class="case-page-picture modal-case-picture">
-                            <p class="case-page-comment">我是上课帮的老客户了，之前一直在这家代写作业和paper。老师们都很专业，后期还可以帮我修改paper。</p>
-                            <div class="case-page-info">
-                                <span>————   萌萌的女汉子</span>
-                                <img src="../image/customer.png" alt="" class="img-circle">
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-4 col-xs-12 case-page-item">
-                        <a href="" class="thumbnail " data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-image.jpg" alt="" class="case-page-picture modal-case-picture">
-                            <p class="case-page-comment">我是上课帮的老客户了，之前一直在这家代写作业和paper。老师们都很专业，后期还可以帮我修改paper。</p>
-                            <div class="case-page-info">
-                                <span>————   萌萌的女汉子</span>
-                                <img src="../image/customer.png" alt="" class="img-circle">
-                            </div>
-                        </a>
-
-                    </div>
+                      </div>  
+                     ";
+                    } 
+                    ?>
 
                 </div>
             </div>
