@@ -13,9 +13,9 @@ function insert($tableName, $columnArray) {
         mysql_select_db($GLOBALS["mysql_db"], $con);
         $keys = array_keys($columnArray);
         $values = array_values($columnArray);
-        $strk = implode(",", $keys);
+        $strk = implode("`,`", $keys);
         $strv = implode("','", $values);
-        $sql = "INSERT INTO $tableName ($strk) VALUES ('$strv')";
+        $sql = "INSERT INTO `$tableName` (`$strk`) VALUES ('$strv')";
         echo $sql;
         $flag = mysql_query($sql, $con);
         mysql_close($con);
@@ -42,7 +42,7 @@ function update($tableName, $columnArray, $id) {
             array_push($sets, "$key='$value'");
         } 
         $str = implode(",", $sets);
-        $sql = "UPDATE $tableName SET $str WHERE id='" . mysql_real_escape_string($id) . "'";
+        $sql = "UPDATE `$tableName` SET $str WHERE id='" . mysql_real_escape_string($id) . "'";
         echo $sql;
         $flag = mysql_query($sql, $con);
         mysql_close($con);
@@ -63,7 +63,7 @@ function remove($tableName, $id) {
         return '连接错误';
     } else {
         mysql_select_db($GLOBALS["mysql_db"], $con);
-        $sql = "DELETE FROM $tableName WHERE id='" . mysql_real_escape_string($id) . "'";
+        $sql = "DELETE FROM `$tableName` WHERE id='" . mysql_real_escape_string($id) . "'";
         echo $sql;
         $flag = mysql_query($sql, $con);
         mysql_close($con);
@@ -141,7 +141,7 @@ function search($tableName, $currentPage, $pageSize, $order, $sort, $columnArray
         mysql_select_db($GLOBALS["mysql_db"], $con);
         $keys = array_keys($columnArray);
         $str = implode(",", $keys);
-        $sql = "SELECT $str FROM $tableName $paramSql $orderSql $limitSql";
+        $sql = "SELECT $str FROM `$tableName` $paramSql $orderSql $limitSql";
         $result = mysql_query($sql, $con);
         mysql_close($con);
         $allresult = array();
