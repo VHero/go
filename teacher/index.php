@@ -58,7 +58,7 @@
 <section class="teacher">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-4">
                 <div class="thumbnail teacher-item">
                     <img src="../image/Picture1.png" alt="" class="img-circle teacher-item-avartar">
                     <div class="caption">
@@ -68,11 +68,7 @@
                         </p>
                         <p class="teacher-item-skill">
                             擅长领域:
-                            <span class="label label-info">心理学</span>
-                            <span class="label label-info">心理学</span>
-                            <span class="label label-info">心理学</span>
-                            <span class="label label-info">法律</span>
-                            <span class="label label-info">心理</span>
+                            <span class="speciality"></span>
 
                         </p>
                         <p class="teacher-item-description">自我介绍:
@@ -80,11 +76,7 @@
                         </p>
                         <p class="teacher-item-school">
                             背景:
-                        <ul class="list-unstyled school-list">
-                            <li>2012.09-2013.06年毕业于University of Rochester从事Marketing专业
-                            </li>
-                            <li>2008.09-2012.0年毕业于Syracuse的Economics专业</li>
-                        </ul>
+                        <span class="educationbg">I graduated from the University of Rochester in marketing master degree. I used to be an intern in Booz&Company and I helped more than 50 students on their business related projects.</span>
                         </p>
                         <p class="teacher-item-score clearfix">
                             评分:
