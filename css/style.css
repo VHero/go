@@ -10,6 +10,13 @@ header{
     }
 
 }
+.pagination{
+    margin: 1px 5px!important;
+}
+.pagination.active{
+    width: 10px;
+    height: 10px;
+}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
     color: #fff;
 }
@@ -345,8 +352,11 @@ footer .qq{
     margin-right: 2px;
     display: inline-block;
 }
-.teacher-item-score{
-
+.teacher-item-school .educationbg{
+    display: block;
+}
+.teacher-item-skill .speciality{
+    display: block;
 }
 .teacher-item-score strong span{
     color: #5bc0de;

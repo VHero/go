@@ -52,25 +52,68 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                	<?php
+                		include "function.php";
+                	$bannerTableName = "banner";
+	                $bannerArray = array("id" =>"", "bannersrc" =>"","keyword"=>"");
+	                $bannerCurrentPage = 1; //1页
+	                $bannerPageSize = 20; //10个
+	                $bannerOrder = "id"; //按照id排序
+	                $bannerSort = "asc";//desc逆序
+	                $bannerParamSql = null;
+	                $imgindex=0;//图片记录次数
+	                $bannerList = search($bannerTableName, $bannerCurrentPage, $bannerPageSize, $bannerOrder, $bannerSort, $bannerArray, $bannerParamSql);
+	                
+                		for($pageIndex=0;$pageIndex<count($bannerList);$pageIndex++){
+                			if($pageIndex==0){
+                				echo "<li data-target='#carousel-example-generic' data-slide-to=".$pageIndex." class='active pagination'></li>";
+                			}else{
+                				echo "<li data-target='#carousel-example-generic' data-slide-to=".$pageIndex." class='pagination'></li>";
+                			}
+                		}
+                	?>
                 </ol>
-
+                	 <div class='carousel-inner' role='listbox'>
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="image/3.jpg" alt="...">
-                        <div class="carousel-caption">
+                <?php
+                
+                	foreach($bannerList as $obj) {
+                		if($imgindex==0){
+								echo "
+		                			<div class='item active'>
+		                				<img src=./".$obj['bannersrc']." alt='".$obj['keyword']."'>
+		                     			<div class='carousel-caption'>
+		                     			</div>
+		                     		</div>
+	                     		";
+	                     		$imgindex++;
+                		}else{
+								echo "
+		                			<div class='item'>
+		                				<img src=./".$obj['bannersrc']." alt='".$obj['keyword']."'>
+		                     			<div class='carousel-caption'>
+		                     			</div>
+		                     		</div>
+	                     		";
+	                     		$imgindex++;                			
+                		}
+	                	
+                    } 
+                ?>
+<!--                 <div class="carousel-inner" role="listbox">
+	                    <div class="item active">
+	                        <img src="image/3.jpg" alt="...">
+	                        <div class="carousel-caption">
 
-                        </div>
-                    </div>
+	                        </div>
+	                    </div>
                     <div class="item">
                         <img src="image/4.jpg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
-
-                </div>
+-->
+                </div> 
 
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

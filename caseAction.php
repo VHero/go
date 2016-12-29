@@ -16,4 +16,5 @@ include "function.php";
 		// INSERT INTO case (id,imgsrc,article,name) VALUES (' ','uploadimg/1482912197.png','1231231','1231241241')
 		// INSERT INTO case (id,imgsrc,article,name) VALUES (' ','123','1231231','1231241241')
 		// INSERT INTO `case` (`id`, `imgsrc`, `article`, `name`) VALUES ('', '1231', '124124', '12312');
+		// INSERT INTO `case` (`id`, `imgsrc`, `article`, `name`) VALUES ('', 'Griffin', '35','12312')
 ?>
