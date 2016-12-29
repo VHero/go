@@ -117,13 +117,30 @@
 
 
                     // htmlString = "<img src="+dataObj['imgsrc']+">"+"<p>"+data[i]['introduction']+"</p>";
-                    htmlString = "<img src="+dataObj['imgsrc']+"  class='img-circle teacher-item-avartar'>";
-
-
-
-
-
-
+                    htmlString = "<div class='col-sm-6 col-md-4'>"+
+                        "<div class='thumbnail teacher-item'>"+
+                        "<img src="+dataObj['imgsrc']+ " class='img-circle teacher-item-avartar'>" +
+                        "<div class='caption'>" +
+                        "<p class='teacher-item-name'>"+
+                        "姓名:" +"<span>"+dataObj['name']+"</span>" +
+                        "</p>" +"<p class='teacher-item-skill'>"+"" +
+                        "擅长领域:" +
+                        "<span class='speciality'>"+dataObj['speciality']+"</span>" +"</p>"+"<p class='teacher-item-description'>"+
+                        "自我介绍:"+
+                        "<span class='introduce'>"+dataObj['introduction']+"</span>" +
+                        "</p>" +"<p class='teacher-item-school'>"+
+                        "背景:" +
+                        "<span class='educationbg'>"+dataObj['educationbg']+"</span>"+
+                        "</p>"+
+                        "<p class='teacher-item-score clearfix'>"+
+                        "评分:"+
+                        "<strong class='pull-right'>"+
+                        "<span class='get-score'>"+dataObj['score']+"</span>"+"/"+"<span class='all-score'>"+"5.0"+"</span>" +
+                        "</strong>"+
+                        "</p>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>";
 
                     html.push(htmlString);
 

@@ -427,3 +427,13 @@ footer .qq{
 
 }
 
+
+
+/*分页信息*/
+.piginationMessage{
+    text-align: center;
+    background: white;
+    border: 0px solid rebeccapurple;
+}
+
+
