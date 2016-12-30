@@ -11,13 +11,15 @@ class DBUtil{
     private $password;
     private $dbName;
     private $pdo;
+    private $tableName;
 
-    public function __construct($host,$user,$password,$dbName)
+    public function __construct($host,$user,$password,$dbName,$tableName)
     {
         $this->host = $host;
         $this->user = $user;
         $this->password = $password;
         $this->dbName = $dbName;
+        $this->tableName = $tableName;
         //这里调用getConnect方法
         $this->getConnect();
     }
@@ -67,7 +69,7 @@ class DBUtil{
      *  select * from products limit a,b;
      */
     public  function  loadProducts($currentPage,$pageSize){
-        $query = "select * from teacher limit ".($currentPage - 1)*$pageSize.",".$pageSize;
+        $query = "select * from $this->tableName limit ".($currentPage - 1)*$pageSize.",".$pageSize;
         $stmt = $this->pdo->prepare($query);
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -76,7 +78,7 @@ class DBUtil{
     }
 
     public function getCountProducts(){
-        $query = "select count(*) as count from teacher";
+        $query = "select count(*) as count from $this->tableName";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);

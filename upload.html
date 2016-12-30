@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		h2{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h2 class="text-center">任务截屏</h2>
+	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="uploadAction.php" class="form-horizontal">
+	  	<div class="form-group">
+	  	<div class="col-md-12">
+		    <label for="upfile">上传任务截图：</label>
+		    <input type="file" name="upfile" id="fileField"/>
+	  		
+	  	</div>
+		</div>
+	  	  <div class="form-group">
+  			<div class="col-md-12">
+  			<input type="submit" name="submit" value="提交" class="btn-primary btn pull-right" />
+  			</div>	
+  		</div>
+	</form>
+
+<h2 class="text-center">案例上传</h2>
+<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="caseAction.php" class="form-horizontal">
+<div class="form-group">
+	<div class="col-md-12">
+	  <label for="upfile">上传案例截图：</label>
+  	  <input type="file" name="upfile" id="fileField" class="" />
+</div>
+</div>
+<div class="form-group">
+    <label for="inputEmail3" class="col-md-1 control-label">姓名:</label>
+    <div class="col-md-11">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="姓名">
+
+    </div>
+
+
+  </div>
+  <div class="form-group">
+	<div class="col-md-12">
+		<textarea type="text" class="form-control" name="contents" placeholder="评价内容" rows="3"></textarea>
+	</div>
+</div>
+  <div class="form-group">
+  <div class="col-md-12">
+  	<input type="submit" name="submit" value="提交" class="btn-primary btn pull-right" />
+  </div>	
+  </div>
+</form>
+<h2>广告图片</h2>
+<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="bannerAction.php">
+  <label for="upfile">上传文件：</label>
+  <input type="file" name="upfile" id="fileField" />
+  <p><label>图片alt关键字:</label><input type="text" name="keyword"></p>
+  <input type="submit" name="submit" value="提交"/>
+</form>
+<h2 class="text-center">团队成员</h2>
+	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="teacherAction.php">
+	  	<div class="form-group">
+		    <label for="upfile">上传头像：</label>
+		    <input type="file" name="upfile" id="fileField"/>
+		</div>
+		<div class="form-group">
+			<p><label>姓名:</label><input type="text" name="name"></p>
+			<textarea class="form-control" placeholder="自我介绍" rows="3"  name="introduction"></textarea>
+			<textarea class="form-control" placeholder="教育背景" rows="3"  name="educationbg"></textarea>
+			<textarea class="form-control" placeholder="擅长领域" rows="3"  name="speciality"></textarea>
+			<p><label>分数:</label><input type="text" name="score"></p>
+		</div>
+	  	<input type="submit" name="submit" value="提交" class="btn btn-primary" />
+	</form>
+	<h2 class="text-center">用户评价</h2>
+	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="commentAction.php">
+	  	<div class="form-group">
+		    <label for="upfile">上传头像：</label>
+		    <input type="file" name="upfile" id="fileField"/>
+		</div>
+		<div class="form-group">
+			<p><label>姓名:</label><input type="text" name="name"></p>
+			<textarea class="form-control" placeholder="用户评价" name="comment"></textarea>
+		</div>
+	  	<input type="submit" name="submit" value="提交" class="btn btn-primary" />
+	</form>
+</div>
+
+</body>
+</html>

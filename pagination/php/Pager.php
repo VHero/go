@@ -9,7 +9,8 @@ require_once "DB.php";
 $currentPage = $_GET['currentPage'];
 $pageSize = $_GET['pageSize'];
 $type = $_GET['type'];
-$db = new DBUtil("localhost",'root','root','sz79');
+$tableName = $_GET['tableName'];
+$db = new DBUtil("localhost",'root','root','sz79',$tableName);
 if ($type == 'query'){
     $rows = $db->loadProducts($currentPage,$pageSize);
 
