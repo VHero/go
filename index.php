@@ -269,7 +269,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="./teacher/index.html" class="btn-primary btn team-btn">顶尖团队</a>
+                    <a href="./teacher/index.php" class="btn-primary btn team-btn">顶尖团队</a>
                 </div>
             </div>
         </section>
@@ -324,7 +324,7 @@
 
             </div>
             <div class="row">
-                <a href="./userComments/comments.html" class="btn-primary btn comment-btn">用户评价</a>
+                <a href="./userComments/comments.php" class="btn-primary btn comment-btn">用户评价</a>
             </div>
         </div>
     </section>
@@ -351,7 +351,7 @@
                 </div>
             </div>
             <div class="row">
-                <a href="./case/index.html" class="btn-primary btn case-btn">经典案例</a>
+                <a href="./case/index.php" class="btn-primary btn case-btn">经典案例</a>
             </div>
         </div>
     </section>

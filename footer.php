@@ -13,9 +13,9 @@
                         我们的服务
                     </li>
 
-                    <li><a href="../service/ourservice/html/course.html">作业辅导</a></li>
-                    <li><a href="../service/ourservice/html/paper.html">论文指导</a></li>
-                    <li><a href="../service/ourservice/html/task.html">课程代修</a></li>
+                    <li><a href="../service/ourservice/html/course.php">作业辅导</a></li>
+                    <li><a href="../service/ourservice/html/paper.php">论文指导</a></li>
+                    <li><a href="../service/ourservice/html/task.php">课程代修</a></li>
                 </ul>
                 <ul class="col-md-2 col-xs-4 privacy-items list-unstyled footer-item hidden-xs">
                     <li class="title">
@@ -50,3 +50,17 @@
             </div>
         </div>
     </footer>
+    <div class="qq-window">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3359703978&amp;site=qq&amp;menu=yes">
+        <i>
+
+        </i>
+        <span >
+                <span>
+                    contact us on
+                </span>
+            <b>QQ</b>
+        </span>
+    </a>
+</div>
+<script src="//v2.zopim.com/?3uJuO48tSqz2ROIbGz3RgzJ2KnCW72Kc"></script>

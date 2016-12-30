@@ -18,10 +18,12 @@
  include "../header.php";
 ?>
 
-    <div class="imgTop">
-        <h1>客户反馈</h1>
+<div class="page-banenr  teacher-page-bg">
+    <div class="container teacher-description">
+        <h3>用户评价</h3>
+        <p>所有评价都是真实</p>
     </div>
-
+</div>
 
     <!--评论区-->
     <div class="comArea">

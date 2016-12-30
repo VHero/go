@@ -125,7 +125,7 @@ $(document).ready(function(){
                         htmlString = "<div class='panel panel-info panelSty'>"+
                             "<div class='panel-heading'>"+
                             "<div>"+
-                            "<img src="+dataObj['imgsrc'] +" alt='头像' class='img-circle imgSty'>"+
+                            "<img src=../"+dataObj['imgsrc'] +" alt='头像' class='img-circle imgSty'>"+
                             "<h3 class='panel-title'>"+dataObj['name']+"&nbsp;&nbsp;&nbsp;&nbsp;发表于"+dataObj['date']+"</h3>"+
                         "</div>"+
                         "</div>"+
