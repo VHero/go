@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #div1{
+            width: 370px;
+            height: 600px;
+            background: yellowgreen;
+
+        }
+        #div1 img{
+            width: 370px;
+            height: 270px;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+    <div id="div1">
+
+    </div>
+    
+    <p>
+        <a href="#" id="prevPage">上一页</a>
+        <a href="#" id="nextPage">下一页</a>
+        第<input type="text" value="1" id="currentPage">页
+        每页显示<input type="text" value="20" id="pageSize">条
+        总共<span id="totalCount"></span>条信息
+    </p>
+
+</div>
+</body>
+</html>
+<script type="text/javascript" src="Base.js"></script>
+<script type="text/javascript" src="Pager.js"></script>
