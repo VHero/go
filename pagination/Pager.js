@@ -25,7 +25,8 @@
             var params = {
                 "currentPage":this.currentPage,
                 "pageSize":this.pageSize,
-                "type":"query"
+                "type":"query",
+                "tableName":"pics"
             }
             var $this = this;
             Base.ajax({

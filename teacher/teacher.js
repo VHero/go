@@ -2,6 +2,9 @@
  * Created by p on 2016/9/13.
  */
 
+$(document).ready(function(){
+
+
 
 (function (window) {
     var page;
@@ -27,7 +30,8 @@
             var params = {
                 "currentPage":this.currentPage,
                 "pageSize":this.pageSize,
-                "type":"query"
+                "type":"query",
+                "tableName":"teacher"
             }
             var $this = this;
             Base.ajax({
@@ -163,3 +167,5 @@
         });
     });
 })(window);
+
+})
