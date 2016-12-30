@@ -11,9 +11,9 @@
                     <li class="title">
                         我们的服务
                     </li>
-                    <li><a href="./service/ourservice/html/course.html">作业辅导</a></li>
-                    <li><a href="./service/ourservice/html/paper.html">论文指导</a></li>
-                    <li><a href="./service/ourservice/html/task.html">课程代修</a></li>
+                    <li><a href="./service/ourservice/html/course.php">作业辅导</a></li>
+                    <li><a href="./service/ourservice/html/paper.php">论文指导</a></li>
+                    <li><a href="./service/ourservice/html/task.php">课程代修</a></li>
                 </ul>
                 <ul class="col-md-2 col-xs-4 privacy-items list-unstyled footer-item hidden-xs">
                     <li class="title">

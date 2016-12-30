@@ -260,12 +260,11 @@ footer .qq{
     text-align: center;
 }
 .case-description h3{
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 28px;
+
 }
 .case-description p{
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 21px;
 }
 .success-case{
     margin-top: 40px;
@@ -319,12 +318,11 @@ footer .qq{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .teacher-description h3{
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 28px;
+
 }
 .teacher-description p{
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 21px;
 }
 .teacher-item-avartar{
     width: 100px;
@@ -376,12 +374,10 @@ footer .qq{
     text-align: center;
 }
 .privacy-description h3{
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 28px;
 }
 .privacy-description p{
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 21px;
 }
 .privacy-container{
     margin-bottom: 40px;

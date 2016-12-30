@@ -19,13 +19,13 @@
                         <li><a href="../case/index.php">成功案例</a></li>
                         <li><a href="../teacher/index.php">导师</a></li>
                         <li><a href="../userComments/comments.php">用户评价</a></li>
-                        <li><a href="../resourceShare/share.html">资源分享</a></li>
+                        <li><a href="../resourceShare/share.php">资源分享</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务 <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="../service/ourservice/html/paper.html">论文辅导</a></li>
-                                <li><a href="../service/ourservice/html/task.html">作业辅导</a></li>
-                                <li><a href="../service/ourservice/html/course.html">课程辅导</a></li>
+                                <li><a href="../service/ourservice/html/paper.php">论文辅导</a></li>
+                                <li><a href="../service/ourservice/html/task.php">作业辅导</a></li>
+                                <li><a href="../service/ourservice/html/course.php">课程辅导</a></li>
                             </ul>
                         </li>
                     </ul>
