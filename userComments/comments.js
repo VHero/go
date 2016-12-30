@@ -105,6 +105,7 @@ $(document).ready(function(){
         });
         //给window添加事件
         Base.addEvent(window,'load',function () {
+
             //5.在windon的load方法中创建pager对象
             page =  new Pager({
                 url:'../pagination/php/Pager.php',
