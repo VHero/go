@@ -7,7 +7,7 @@
  */
 require_once "DB.php";
 
-$db = new DBUtil("localhost",'root','root','sz79');
+$db = new DBUtil("localhost",'root','root','go');
 $db->insertProducts();
 
 //$db->loadProducts(2,30);
