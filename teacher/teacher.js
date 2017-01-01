@@ -151,6 +151,7 @@ $(document).ready(function(){
                                             +"<img src=../"+dataObj['imgsrc']+" alt='' class='img-circle'>"
                                         +"</div>"
                                         +"<div class='col-md-10 teacher-item-right'>"
+                                        +"<p class='teacher-item-name'>姓名:<span>"+dataObj['name']+"</span>"
                                         +"<p >教育背景:</p>"
                                         +"<p class='teacher-item-school'>"+dataObj['educationbg']
                                         +"</p>"

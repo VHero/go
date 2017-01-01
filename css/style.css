@@ -343,7 +343,7 @@ footer .qq{
 .teacher-item-avartar{
     text-align: center;
 }
-.teacher-item-right p:first-child{
+.teacher-item-right p:nth-child(2){
     margin-bottom: 0;
 }
 .teacher-page-bg{
