@@ -211,9 +211,9 @@
                                 <p>院校学历:哥伦比亚大学</p>
                                 <p class="">
                                     擅长领域:
-                                    <span class="label label-info">哲学</span>
-                                    <span class="label label-info">法律</span>
-                                    <span class="label label-info">心理</span>
+                                    <span class="label label-success">哲学</span>
+                                    <span class="label label-success">法律</span>
+                                    <span class="label label-success">心理</span>
 
                                 </p>
                             </div>
@@ -227,9 +227,9 @@
                                 <p>院校学历:哥伦比亚大学</p>
                                 <p class="">
                                     擅长领域:
-                                    <span class="label label-info">哲学</span>
-                                    <span class="label label-info">法律</span>
-                                    <span class="label label-info">心理</span>
+                                    <span class="label label-success">哲学</span>
+                                    <span class="label label-success">法律</span>
+                                    <span class="label label-success">心理</span>
 
                                 </p>
                             </div>
@@ -243,9 +243,9 @@
                                 <p>院校学历:哥伦比亚大学</p>
                                 <p class="">
                                     擅长领域:
-                                    <span class="label label-info">哲学</span>
-                                    <span class="label label-info">法律</span>
-                                    <span class="label label-info">心理</span>
+                                    <span class="label label-success">哲学</span>
+                                    <span class="label label-success">法律</span>
+                                    <span class="label label-success">心理</span>
 
                                 </p>
                             </div>
@@ -259,9 +259,9 @@
                                 <p>院校学历:哥伦比亚大学</p>
                                 <p class="">
                                     擅长领域:
-                                    <span class="label label-info">哲学</span>
-                                    <span class="label label-info">法律</span>
-                                    <span class="label label-info">心理</span>
+                                    <span class="label label-success">哲学</span>
+                                    <span class="label label-success">法律</span>
+                                    <span class="label label-success">心理</span>
 
                                 </p>
                             </div>

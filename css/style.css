@@ -30,8 +30,8 @@ header{
     background-color: #ddd;
 }
 .navbar-default{
-    background-color:#3498db ;
-    border-color: #3498db;
+    background-color:#5cb85c ;
+    border-color: #5cb85c;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     /*text-decoration: underline;*/
@@ -156,7 +156,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
 .home-comment-item:hover{
-    border: 1px solid #3498db;
+    border: 1px solid #4cae4c;
 }
 .customer-picture{
     width: 50px;
@@ -286,9 +286,20 @@ footer .qq{
     text-decoration: none;
     color: #428bca;
 }
+.case-page-picture {
+    height: 220px!important;
+}
 .case-page-comment{
     margin-top: 10px;
     color: #333;
+    height: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.comment-text{
+    margin-top: 20px;
+    padding: 0 10px;
 }
 .modal-case-picture img{
     display: block;
@@ -314,8 +325,13 @@ footer .qq{
     margin-bottom: 40px;
 }
 .teacher-item{
+    padding-top:10px;
+    padding-bottom: 10px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .teacher-description h3{
     font-size: 28px;
@@ -325,7 +341,10 @@ footer .qq{
     font-size: 21px;
 }
 .teacher-item-avartar{
-    width: 100px;
+    text-align: center;
+}
+.teacher-item-right p:nth-child(2){
+    margin-bottom: 0;
 }
 .teacher-page-bg{
     height: 300px;
@@ -343,19 +362,12 @@ footer .qq{
 .teacher-pagination{
     text-align: center;
 }
-.teacher-item-description .introduce{
-    display: block;
-}
+
 .school-list li span{
     margin-right: 2px;
     display: inline-block;
 }
-.teacher-item-school .educationbg{
-    display: block;
-}
-.teacher-item-skill .speciality{
-    display: block;
-}
+
 .teacher-item-score strong span{
     color: #5bc0de;
 }

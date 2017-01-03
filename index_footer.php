@@ -62,6 +62,6 @@
     </a>
 </div>
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="//v2.zopim.com/?3uJuO48tSqz2ROIbGz3RgzJ2KnCW72Kc"></script>

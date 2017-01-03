@@ -11,7 +11,7 @@ $pageSize = $_GET['pageSize'];
 $type = $_GET['type'];
 
 $tableName = $_GET['tableName'];
-$db = new DBUtil("localhost",'root','root','go',$tableName);
+$db = new DBUtil("localhost",'root','root','go2',$tableName);
 
 if ($type == 'query'){
     $rows = $db->loadProducts($currentPage,$pageSize);

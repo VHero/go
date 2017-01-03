@@ -121,31 +121,65 @@ $(document).ready(function(){
 
 
                     // htmlString = "<img src="+dataObj['imgsrc']+">"+"<p>"+data[i]['introduction']+"</p>";
-                    htmlString = "<div class='col-sm-6 col-md-4'>"+
-                        "<div class='thumbnail teacher-item'>"+
-                        "<img src="+dataObj['imgsrc']+ " class='img-circle teacher-item-avartar'>" +
-                        "<div class='caption'>" +
-                        "<p class='teacher-item-name'>"+
-                        "姓名:" +"<span>"+dataObj['name']+"</span>" +
-                        "</p>" +"<p class='teacher-item-skill'>"+"" +
-                        "擅长领域:" +
-                        "<span class='speciality'>"+dataObj['speciality']+"</span>" +"</p>"+"<p class='teacher-item-description'>"+
-                        "自我介绍:"+
-                        "<span class='introduce'>"+dataObj['introduction']+"</span>" +
-                        "</p>" +"<p class='teacher-item-school'>"+
-                        "背景:" +
-                        "<span class='educationbg'>"+dataObj['educationbg']+"</span>"+
-                        "</p>"+
-                        "<p class='teacher-item-score clearfix'>"+
-                        "评分:"+
-                        "<strong class='pull-right'>"+
-                        "<span class='get-score'>"+dataObj['score']+"</span>"+"/"+"<span class='all-score'>"+"5.0"+"</span>" +
-                        "</strong>"+
-                        "</p>"+
-                        "</div>"+
-                        "</div>"+
-                        "</div>";
+                    // htmlString = "<div class='col-sm-6 col-md-4'>"+
+                    //     "<div class='thumbnail teacher-item'>"+
+                    //     "<img src=../"+dataObj['imgsrc']+ " class='img-circle teacher-item-avartar'>" +
+                    //     "<div class='caption'>" +
+                    //     "<p class='teacher-item-name'>"+
+                    //     "姓名:" +"<span>"+dataObj['name']+"</span>" +
+                    //     "</p>" +"<p class='teacher-item-skill'>"+"" +
+                    //     "擅长领域:" +
+                    //     "<span class='speciality'>"+dataObj['speciality']+"</span>" +"</p>"+"<p class='teacher-item-description'>"+
+                    //     "自我介绍:"+
+                    //     "<span class='introduce'>"++"</span>" +
+                    //     "</p>" +"<p class='teacher-item-school'>"+
+                    //     "背景:" +
+                    //     "<span class='educationbg'>"+dataObj['educationbg']+"</span>"+
+                    //     "</p>"+
+                    //     "<p class='teacher-item-score clearfix'>"+
+                    //     "评分:"+
+                    //     "<strong class='pull-right'>"+
+                    //     "<span class='get-score'>"+dataObj['score']+"</span>"+"/"+"<span class='all-score'>"+"5.0"+"</span>" +
+                    //     "</strong>"+
+                    //     "</p>"+
+                    //     "</div>"+
+                    //     "</div>"+
+                    //     "</div>";
 
+                        htmlString="<div class='row teacher-item'>"
+                                        +"<div class='col-md-2 teacher-item-avartar'>"
+                                            +"<img src=../"+dataObj['imgsrc']+" alt='' class='img-circle'>"
+                                        +"</div>"
+                                        +"<div class='col-md-10 teacher-item-right'>"
+                                        +"<p class='teacher-item-name'>姓名:<span>"+dataObj['name']+"</span>"
+                                        +"<p >教育背景:</p>"
+                                        +"<p class='teacher-item-school'>"+dataObj['educationbg']
+                                        +"</p>"
+                                        +"<p class='teacher-item-description'>自我介绍:"
+                                        +"<span>"+dataObj['introduction']+"</span>"
+                                        +"<p class='teacher-item-skill'>擅长领域: "
+                                        +"<span class='speciality'>"+dataObj['speciality']
+                                        +"</span>"
+                                        +"</p>"
+                                        +"<p class='teacher-item-score clearfix'>"
+                                        +"<strong class='pull-right'>"
+                                        +"<span class='get-score'>4.9</span>/<span class='all-score'>5.0</span>"
+                                        +"</strong></p></div></div>"
+                        
+        
+            
+               
+            
+            
+            
+      
+
+
+
+            
+                
+                
+                
                     html.push(htmlString);
 
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8"> -->
+    <meta charset="UTF-8">
     <title>案例</title>
     <!--[if lt IE 9]>
 
@@ -34,7 +34,7 @@
                 <div class="row case-page-list" >
                     <?php
                                     
-                $caseTableName = "case";
+             $caseTableName = "case";
                 $caseArray = array("id" =>"", "imgsrc" =>"","article"=>"","name"=>"");
                 $caseCurrentPage = 1; //1页
                 $casePageSize = 20; //10个
@@ -54,9 +54,8 @@
                         </a>
                       </div>  
                      ";
-                    } 
+                    }
                     ?>
-
                 </div>
             </div>
         </seciton>
@@ -88,34 +87,6 @@
                         ";
                 }
                     ?>
-                    
-                            
-                        
-                   <!--  <div class="task-items col-md-4 col-xs-12">
-                        <a href="" class="task-link thumbnail" data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-picture2.jpg" alt="" class="task-items-picture">
-                        </a>
-                    </div>
-                    <div class="task-items col-md-4 col-xs-12">
-                        <a href="" class="task-link thumbnail" data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-picture2.jpg" alt="" class="task-items-picture">
-                        </a>
-                    </div>
-                    <div class="task-items col-md-4 col-xs-12">
-                        <a href="" class="task-link thumbnail" data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-picture2.jpg" alt="" class="task-items-picture">
-                        </a>
-                    </div>
-                    <div class="task-items col-md-4 col-xs-12">
-                        <a href="" class="task-link thumbnail" data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-picture2.jpg" alt="" class="task-items-picture">
-                        </a>
-                    </div>
-                    <div class="task-items col-md-4 col-xs-12">
-                        <a href="" class="task-link thumbnail" data-toggle="modal" data-target=".bs-modal1">
-                            <img src="../image/case-picture2.jpg" alt="" class="task-items-picture">
-                        </a>
-                    </div> -->
 
                 </div>
             </div>
@@ -125,6 +96,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-case-picture">
                 <img src="" alt="">
+                <p></p>
             </div>
         </div>
     </div>
@@ -140,21 +112,23 @@
         $(".task-items-picture").on('click',bindImgSrc);
         //绑定
         function bindImgSrc() {
-            console.log($(this).attr('src'));
             var imgSrc=$(this).attr('src');
-            modalContent(imgSrc);
+            var commentText=$(this).next().text();
+            modalContent(imgSrc,commentText);
         }
         //加载内容进入模态框
-        function modalContent(imgsrc){
-            $(".modal-case-picture").find('img').attr({src:imgsrc});
+        function modalContent(imgsrc,commentText){
+            $(".modal-content img").attr({src:imgsrc});
+            $(".modal-content p").addClass("comment-text");
+            $(".modal-content p").text(commentText);
         }
-        $.ajax({
-            type:"GET",
-            url:"http://localhost/goapi/task",
-            success:function(data){
-                console.log(data);
-            }
-        })
+        // $.ajax({
+        //     type:"GET",
+        //     url:"http://localhost/goapi/task",
+        //     success:function(data){
+        //         console.log(data);
+        //     }
+        // })
     })
 
 </script>
