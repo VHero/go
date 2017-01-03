@@ -22,7 +22,7 @@
                         隐私与声明
                     </li>
                     <li>
-                        <a href="../privacy.html">隐私条款</a>
+                        <a href="../privacy.php">隐私条款</a>
                     </li>
                 </ul>
                 <ul class="col-md-2 col-xs-4 aboutus-items list-unstyled footer-item hidden-xs">
@@ -30,7 +30,7 @@
                         关于我们
                     </li>
                     <li>
-                        <a href="../joinUs.html">加入我们</a>
+                        <a href="../joinUs.php">加入我们</a>
                     </li>
                 </ul>
             </div>

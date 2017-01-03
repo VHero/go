@@ -125,6 +125,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content modal-case-picture">
                 <img src="" alt="">
+                <p></p>
             </div>
         </div>
     </div>
@@ -140,21 +141,24 @@
         $(".task-items-picture").on('click',bindImgSrc);
         //绑定
         function bindImgSrc() {
-            console.log($(this).attr('src'));
             var imgSrc=$(this).attr('src');
-            modalContent(imgSrc);
+            var commentText=$(this).next().text();
+            console.log(commentText);
+            modalContent(imgSrc,commentText);
         }
         //加载内容进入模态框
-        function modalContent(imgsrc){
-            $(".modal-case-picture").find('img').attr({src:imgsrc});
+        function modalContent(imgsrc,commentText){
+            $(".modal-content img").attr({src:imgsrc});
+            $(".modal-content p").addClass("comment-text");
+            $(".modal-content p").text(commentText);
         }
-        $.ajax({
-            type:"GET",
-            url:"http://localhost/goapi/task",
-            success:function(data){
-                console.log(data);
-            }
-        })
+        // $.ajax({
+        //     type:"GET",
+        //     url:"http://localhost/goapi/task",
+        //     success:function(data){
+        //         console.log(data);
+        //     }
+        // })
     })
 
 </script>
