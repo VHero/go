@@ -439,8 +439,7 @@ footer .qq{
 
 /*分页信息*/
 .piginationMessage{
-    text-align: center;
-    background: white;
+    background-color: #EBEBEB;
     border: 0px solid rebeccapurple;
 }
 
