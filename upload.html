@@ -63,6 +63,8 @@
   <p><label>图片alt关键字:</label><input type="text" name="keyword"></p>
   <input type="submit" name="submit" value="提交"/>
 </form>
+
+
 <h2 class="text-center">团队成员</h2>
 	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="teacherAction.php">
 	  	<div class="form-group">
@@ -78,6 +80,9 @@
 		</div>
 	  	<input type="submit" name="submit" value="提交" class="btn btn-primary" />
 	</form>
+
+
+
 	<h2 class="text-center">用户评价</h2>
 	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="commentAction.php">
 	  	<div class="form-group">
@@ -89,6 +94,24 @@
 			<textarea class="form-control" placeholder="用户评价" name="comment"></textarea>
 		</div>
 	  	<input type="submit" name="submit" value="提交" class="btn btn-primary" />
+	</form>
+
+
+
+
+	<h2 class="text-center">资源分享</h2>
+	<form id="upfile" name="upform" enctype="multipart/form-data" method="post" action="resourceShare.php">
+		<div class="form-group">
+			<label for="upfile">上传学生图片：</label>
+			<input type="file" name="upfile" id="fileField"/>
+		</div>
+		<div class="form-group">
+			<p><label>标题</label><input type="text" name="title"></p>
+			<p><label>作者</label><input type="text" name="author"></p>
+			<textarea class="form-control" placeholder="正文..." name="article"></textarea>
+		</div>
+		<input type="submit" name="submit" value="提交" class="btn btn-primary" />
+
 	</form>
 </div>
 

@@ -52,6 +52,8 @@
             </ul>
         </nav>
     </div>
+
+
     <?php
         include "../footer.php";
     ?>
