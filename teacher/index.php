@@ -43,8 +43,8 @@
 <div class="container">
 
     <pre class="piginationMessage">
-        第 <input type="text" value="1" id="currentPage"> 页          每页显示 <input type="text" value="20" id="pageSize"> 条          总共 <span id="totalCount"></span> 条信息
-    </pre>
+                        第 <span id="currentPage"></span> 页          每页显示 <span id="pageSize"></span> 条          总共 <span id="totalCount"></span> 条信息
+                    </pre>
 
     <nav class="teacher-pagination">
         <ul class="pager">
