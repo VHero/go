@@ -14,7 +14,7 @@ header{
     margin: 1px 5px!important;
 }
 .pagination.active{
-    width: 10px;
+    width: 30px;
     height: 10px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
