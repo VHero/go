@@ -153,10 +153,10 @@ $(document).ready(function(){
 
                     // Base.$('table').innerHTML = htmls;
                     Base.$('totalCount').innerHTML = countObj.count;
-                    Base.$('pageSize').value = this.pageSize;
+                    Base.$('pageSize').innerHTML = this.pageSize;
                     //求得最大的页数
                     this.pageCount = Math.ceil(countObj.count / this.pageSize);
-                    Base.$('currentPage').value = this.currentPage;
+                    Base.$('currentPage').innerHTML = this.currentPage;
                 }
             });
         });
