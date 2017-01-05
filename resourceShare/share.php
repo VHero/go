@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/share.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../pagination/Base.js"></script>
     <script src="share.js"></script>
 </head>
 <body>
@@ -40,61 +41,19 @@
     <div class="container">
         <div class="row">
 
-            <main class="col-md-8 main-content">
-
-                <article id="70" class="post">
-
-                    <div class="post-head">
-                        <h1 class="post-title"><a href="#">课程帮对我的帮助</a></h1>
-                        <div class="post-meta">
-                            <span class="author">作者：Penn State U</span> •
-                            <time class="post-date" datetime="2016年8月24日星期三凌晨2点04分" title="2016年8月24日星期三凌晨2点04分">2016年8月24日</time>
-                        </div>
-                    </div>
-                    <div class="featured-media">
-                        <a href="#"><img src="../image/1.jpg" alt="Laravel 5.3 正式发布"></a>
-                    </div>
-                    <div class="post-content">
-                        <p>我选了几个门课都是实体课。虽然每次上课课内作业都还应付的来，但是考试很难。自从报名了上课帮，帮我考的一直很好。下学期我准备选几个online course.再来你家报名。</p>
-                    </div>
+            <main class="col-md-8 main-content" id="share0">
 
 
-                    <div class="post-permalink">
-                        <a href="#" class="btn btn-default">阅读全文</a>
-                    </div>
-
-                </article>
-                <article id="69" class="post">
-
-                    <div class="post-head">
-                        <h1 class="post-title"><a href="#">谢谢课程帮的老师</a></h1>
-                        <div class="post-meta">
-                            <span class="author">作者：Adan</span> •
-                            <time class="post-date" datetime="2016年8月24日星期三凌晨2点04分" title="2016年8月24日星期三凌晨2点04分">2016年8月24日</time>
-                        </div>
-                    </div>
-                    <div class="featured-media">
-                        <a href="#"><img src="../image/2.jpg" alt="Laravel 5.3 正式发布"></a>
-                    </div>
-                    <div class="post-content">
-                        <p>我想上一门 Accounting的网课，但是自己找不到合适的。我想找一个是4年本科不是2年社区学员的，最好便宜一点的。咨询了上课帮，帮我推荐了一门比较适合我现在情况的课程。我就报名代修了这门课，老师很专业，帮我拿到了很高的学分。</p>
-                    </div>
 
 
-                    <div class="post-permalink">
-                        <a href="#" class="btn btn-default">阅读全文</a>
-                    </div>
-
-                </article>
 
 
-                <nav class="pagination" role="navigation">
-                    <span class="page-number">第 1 页 ⁄ 共 1 页</span>
-                    <a class="older-posts" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-                </nav>
+
+
 
 
             </main>
+
 
             <aside class="col-md-4 sidebar">
 
@@ -126,6 +85,20 @@
         </div>
     </div>
 </section>
+
+    <div class="container">
+
+                    <pre class="piginationMessage">
+                        第 <input type="text" value="1" id="currentPage"> 页          每页显示 <input type="text" value="20" id="pageSize"> 条          总共 <span id="totalCount"></span> 条信息
+                    </pre>
+
+        <nav class="teacher-pagination">
+            <ul class="pager">
+                <li><a href="#" id="prevPage">上一页</a></li>
+                <li><a href="#" id="nextPage">下一页</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
 <?php
